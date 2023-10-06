@@ -1,52 +1,69 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
 title: AnZreww's Blog
+description: "A blog about Anzrewwwwwwww ..."
+baseurl: "" # for test
+url: "http://an-314.github.io" # for test: remove string 'http://yourusername.github.io' to '' but in production: 'https://yourusername.github.io'
+
+# User settings
+username: AnZrew
+user_title: Anzrew - FrontEnd
 email: liuja22@mails.tsinghua.edu.cn
-description: >- # this means to ignore newlines until "baseurl:"
-  This is a blog about my life and my thoughts.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: AnZreww
-github_username: An-3ww
+twitter_username: _An_314
+github_username: An-314
+# discord_invite: # Example: Discord server invite gg extension like in 'https://discord.gg/cj5rg'
+linkedin_public_url: # Example: For public profile 'www.linkedin.com/in/john-smith', 'john-smith' is your linkedin_public_url
+disqus_username:
+profile_picture: /assets/img/avatar.jpg
 
 # Build settings
-theme: minima
-plugins:
-  - jekyll-feed
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
+
+# Links to include in menu navigation
+links:
+  section_1:
+    - title: home
+      url: /
+      key_trigger: 1
+    - title: my posts
+      url: /posts
+      key_trigger: 2
+    - title: series
+      url: /series
+      key_trigger: 3
+    - title: tags
+      url: /tags
+      key_trigger: 4
+    - title: about me
+      url: /about
+      key_trigger: 5
+  section_2:
+    - title: github
+      url: http://www.github.com/an-314
+      new_tab: true
+      key_trigger: g
+    - title: twitter
+      url: http://www.twitter.com/_An_314
+      new_tab: true
+      key_trigger: t
+    - title: search
+      url: ""
+      key_trigger: s #WARNING: search only works with "s"
+
+# projects in header index
+projects:
+  - name: data-to-tex：物理实验数据处理并生成tex报告
+    url: https://github.com/An-314/data-to-tex
+  - name: Notes-of-Introduction_to_Logic：《逻辑学概论》笔记
+    url: https://github.com/An-314/Notes-of-Introduction_to_Logic
+
+# exclude my node related stuff
+exclude: ["package.json", "src", "node_modules"]

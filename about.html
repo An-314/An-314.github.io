@@ -1,0 +1,89 @@
+---
+layout: minimal
+title: "About me"
+permalink: /about/index.html
+description: "Some description about Anzreww..."
+---
+
+<h1 class="about-title">About me</h1>
+
+<img
+  itemprop="image"
+  class="img-rounded about_perfil"
+  src="\assets\img\avatar.jpg"
+  alt="My profile"
+/>
+
+<div class="aboutme">
+  <p class="introduction">
+    你好！我是Anzreww，目前在清华大学攻读数理基础科学和工程物理专业。
+  </p>
+</div>
+
+<h2>My interests</h2>
+
+<div class="aboutme interests">
+  <ul class="recent">
+    <li>
+      <h3>Mathematics</h3>
+      <p class="cite">万物皆数。</p>
+      <p>
+        数学不仅仅是工具。它是解释这个复杂世界的基础。数学自有精微的结构和严密的逻辑体系，可以说是相当优雅的语言。
+      </p>
+    </li>
+    <li>
+      <h3>Computer science</h3>
+      <p class="cite">Beautiful is better than ugly.</p>
+      <p>
+        计算机科学是极其优雅的，计算机工程师解决问题的方法也是优雅的。我喜欢计算机科学的优雅，也喜欢它的实用。
+      </p>
+    </li>
+    <li>
+      <h3>Physics</h3>
+      <p class="cite">上帝不掷骰子。</p>
+      <p>
+        物理是理论和实验并重的学科。人类靠物理来解释世界和改变世界，其中一定暗藏着许多哲学。
+      </p>
+    </li>
+  </ul>
+</div>
+
+<h2>My projects</h2>
+
+<div class="aboutme">
+  <ul class="recent">
+    {% for project in site.projects %}
+    <li>
+      <a href="{{ project.url}}"
+        ><h3 class="project-name" itemprop="name">{{ project.name }}</h3></a
+      >
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<h2>My hobbies</h2>
+
+<div class="aboutme hobbies">
+  <ul class="recent">
+    <li>
+      <a href="https://www.yuanshen.com/#/"> <h3>Genshin Impact</h3></a>
+      <p>
+        喜欢提瓦特宏大的世界观和史诗感，喜欢原神以交互探索式的碎片化叙事，喜欢挖掘文本里更深的秘密。UID:242203933
+      </p>
+    </li>
+    <li>
+      <h3>Rhythm Game</h3>
+      <p>
+        在练习<a href="https://c2.dragonest.com/"> Cytus2</a>与<a
+          href="https://arcaea.lowiro.com/"
+          >Arcaea</a
+        >。音游不是简单的手速练习，而是跟着音乐的节奏和旋律，跟曲师与谱师的情绪一起悦动。
+      </p>
+    </li>
+    <li>
+      <h3>Violin</h3>
+      <p>鄙人不才，身无所长，儿时所学也早已荒废。但沉浸在音乐中仍令我快慰。</p>
+    </li>
+  </ul>
+</div>
