@@ -46,6 +46,9 @@ links:
       url: /aboutme
       key_trigger: 5
   section_2:
+    - title: tasks
+      url: /task
+      key_trigger: t
     - title: github
       url: http://www.github.com/an-314
       new_tab: true
