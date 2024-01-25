@@ -63,6 +63,10 @@ links:
 
 # projects in header index
 projects:
+  - name: Notes-of-DSA：《数据结构》笔记
+    url: https://github.com/An-314/Notes-of-DSA
+  - name: Notes-of-Electromagnetism：《电磁学》笔记
+    url: https://github.com/An-314/Notes-of-Electromagnetism
   - name: data-to-tex：物理实验数据处理并生成tex报告
     url: https://github.com/An-314/data-to-tex
   - name: Notes-of-Introduction_to_Logic：《逻辑学概论》笔记
