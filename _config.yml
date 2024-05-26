@@ -22,55 +22,61 @@ permalink: /:title/
 
 # html minify
 compress_html:
-  clippings: all
-  comments: all
-  endings: []
-  profile: false
+    clippings: all
+    comments: all
+    endings: []
+    profile: false
 
 # Links to include in menu navigation
 links:
-  section_1:
-    - title: home
-      url: /
-      key_trigger: 1
-    - title: my posts
-      url: /posts
-      key_trigger: 2
-    - title: series
-      url: /series
-      key_trigger: 3
-    - title: tags
-      url: /tags
-      key_trigger: 4
-    - title: about me
-      url: /aboutme
-      key_trigger: 5
-  section_2:
-    - title: tasks
-      url: /task
-      key_trigger: t
-    - title: github
-      url: http://www.github.com/an-314
-      new_tab: true
-      key_trigger: g
-    - title: twitter
-      url: http://www.twitter.com/_An_314
-      new_tab: true
-      key_trigger: t
-    - title: search
-      url: ""
-      key_trigger: s #WARNING: search only works with "s"
+    section_1:
+        - title: home
+          url: /
+          key_trigger: 1
+        - title: my posts
+          url: /posts
+          key_trigger: 2
+        - title: series
+          url: /series
+          key_trigger: 3
+        - title: tags
+          url: /tags
+          key_trigger: 4
+        - title: about me
+          url: /aboutme
+          key_trigger: 5
+    section_2:
+        # - title: tasks
+        #   url: /task
+        #   key_trigger: t
+        - title: github
+          url: http://www.github.com/an-314
+          new_tab: true
+          key_trigger: g
+        - title: twitter
+          url: http://www.twitter.com/_An_314
+          new_tab: true
+          key_trigger: t
+        - title: search
+          url: ""
+          key_trigger: s #WARNING: search only works with "s"
 
 # projects in header index
 projects:
-  - name: Notes-of-DSA：《数据结构》笔记
-    url: https://github.com/An-314/Notes-of-DSA
-  - name: Notes-of-Electromagnetism：《电磁学》笔记
-    url: https://github.com/An-314/Notes-of-Electromagnetism
-  - name: data-to-tex：物理实验数据处理并生成tex报告
-    url: https://github.com/An-314/data-to-tex
-  - name: Notes-of-Introduction_to_Logic：《逻辑学概论》笔记
-    url: https://github.com/An-314/Notes-of-Introduction_to_Logic
+    - name: 清华大学未央书院第二届学生节——“未来式”抽奖程序
+      url: https://github.com/An-314/DZMLuckyDraw
+    - name: Bilibili-dynamics-push-plugin：适用于YunZaibot的B站动态推送插件
+      url: https://github.com/An-314/Bilibili-dynamics-push-plugin
+    - name: AnZrew的typst模板
+      url: https://github.com/An-314/typst-templates
+    - name: Notes-of-DSA：《数据结构》笔记
+      url: https://github.com/An-314/Notes-of-DSA
+    - name: Notes-of-Electromagnetism：《电磁学》笔记
+      url: https://github.com/An-314/Notes-of-Electromagnetism
+    - name: data-to-tex：物理实验数据处理并生成tex报告
+      url: https://github.com/An-314/data-to-tex
+    - name: Notes-of-Introduction_to_Logic：《逻辑学概论》笔记
+      url: https://github.com/An-314/Notes-of-Introduction_to_Logic
 
 # exclude my node related stuff
 exclude: ["package.json", "src", "node_modules"]
