@@ -67,8 +67,8 @@ projects:
       url: https://github.com/An-314/DZMLuckyDraw
     - name: Bilibili-dynamics-push-plugin：适用于YunZaibot的B站动态推送插件
       url: https://github.com/An-314/Bilibili-dynamics-push-plugin
-    - name: AnZrew的typst模板
-      url: https://github.com/An-314/typst-templates
+    - name: Scripst
+      url: https://github.com/An-314/scripst
     - name: Notes-of-DSA：《数据结构》笔记
       url: https://github.com/An-314/Notes-of-DSA
     - name: Notes-of-Electromagnetism：《电磁学》笔记
